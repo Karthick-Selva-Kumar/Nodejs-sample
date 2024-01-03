@@ -10,7 +10,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'docker run my-node nodeapp -m pytest app/tests/'
+        sh 'docker run mynodeimg -m pytest app/tests/'
       }
     }
     stage('Deploy') {
