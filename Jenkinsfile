@@ -5,7 +5,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'docker build -t mynodeimg .'
-        sh 'docker tag my-node $DOCKER_BFLASK_IMAGE'
+        sh 'docker tag mynodeimg $DOCKER_BFLASK_IMAGE'
       }
     }
     stage('Test') {
