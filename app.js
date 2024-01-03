@@ -7,7 +7,7 @@ const port = 3000;
 // Creating server  
 const server = http.createServer((req, res) => {
     // Sending the response 
-    res.write("Hello World");
+    res.write("Hello World, This is Node-js app");
     res.end();
 });
 
