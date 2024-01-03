@@ -23,7 +23,7 @@ pipeline {
   post{
       always{
             sh 'docker rm -f mynodeapp'
-            sh 'docker run --name mynodeapp -d -p 3000:3000 my-node'
+            sh 'docker run --name mynodeapp -d -p 3000:3000 my-nodeimg'
             
         }
 }
